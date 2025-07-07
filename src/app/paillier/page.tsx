@@ -70,6 +70,47 @@ export default function PaillierDemo() {
           <b>Decryption:</b> Decrypt the sum using the private key.
         </li>
       </ol>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-2">What is the Paillier Cryptosystem?</h2>
+        <p className="mb-2 text-gray-700 dark:text-gray-300">
+          The Paillier cryptosystem is a special kind of encryption that lets you add numbers together while they're still encrypted. This is called <b>homomorphic encryption</b>. It's useful for privacy: you can do math on data without ever seeing the original numbers!
+        </p>
+        <h3 className="text-xl font-semibold mt-4 mb-1">Real-World Example</h3>
+        <p className="mb-2 text-gray-700 dark:text-gray-300">
+          Imagine a voting system on a blockchain. Each person's vote is encrypted with Paillier. The votes can be added up while still encrypted, so no one sees individual votes—only the final tally is decrypted. This keeps everyone's vote private!
+        </p>
+        <div className="bg-blue-50 dark:bg-blue-900/40 border-l-4 border-blue-400 p-4 mb-2 text-blue-900 dark:text-blue-200 rounded">
+          <b>In short:</b> Paillier lets you add up encrypted numbers, making it great for privacy-preserving applications like voting or private finance.
+        </div>
+        <h3 className="text-xl font-semibold mt-4 mb-1">Why is Paillier important?</h3>
+        <ul className="list-disc list-inside mb-2 text-gray-700 dark:text-gray-300">
+          <li>It enables privacy-preserving computations on blockchains.</li>
+          <li>It's used in secure voting, private statistics, and confidential finance.</li>
+          <li>It shows how cryptography can protect data even during processing.</li>
+        </ul>
+        <h3 className="text-xl font-semibold mt-4 mb-1">Learn More</h3>
+        <ul className="list-disc list-inside text-blue-700 dark:text-blue-300">
+          <li><a href="https://en.wikipedia.org/wiki/Paillier_cryptosystem" target="_blank" rel="noopener noreferrer" className="underline">Paillier Cryptosystem (Wikipedia)</a></li>
+          <li><a href="https://www.zama.ai/post/homomorphic-encryption-explained" target="_blank" rel="noopener noreferrer" className="underline">Homomorphic Encryption Explained</a></li>
+          <li><a href="https://www.youtube.com/watch?v=2G1b5-G6bY0" target="_blank" rel="noopener noreferrer" className="underline">Video: Homomorphic Encryption for Beginners</a></li>
+        </ul>
+      </section>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-2">How is Paillier used in Blockchains?</h2>
+        <p className="mb-2 text-gray-700 dark:text-gray-300">
+          Paillier encryption is used in blockchain and crypto projects that need privacy-preserving features. It allows computations on encrypted data, so sensitive information (like votes or financial data) stays private, even while being processed by smart contracts or blockchain nodes.
+        </p>
+        <h3 className="text-xl font-semibold mt-4 mb-1">Example: Private Voting on a Blockchain</h3>
+        <ul className="list-disc list-inside mb-2 text-gray-700 dark:text-gray-300">
+          <li>Each vote is encrypted with Paillier and sent to the blockchain.</li>
+          <li>Votes are added up while still encrypted (no one can see individual votes).</li>
+          <li>Only the final tally is decrypted at the end, revealing the result but not how anyone voted.</li>
+          <li>This keeps voting private and secure, even on a public blockchain.</li>
+        </ul>
+        <div className="bg-green-50 dark:bg-green-900/40 border-l-4 border-green-400 p-4 mb-2 text-green-900 dark:text-green-200 rounded">
+          <b>Paillier enables new kinds of privacy-preserving apps on blockchains, like confidential voting, private auctions, and secure finance.</b>
+        </div>
+      </section>
       <div className="border rounded-lg p-6 bg-white dark:bg-gray-800 shadow mb-8">
         <div className="mb-4">
           <button onClick={generateKeys} className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" disabled={loading}>{loading ? "Generating..." : "Generate Key Pair"}</button>
