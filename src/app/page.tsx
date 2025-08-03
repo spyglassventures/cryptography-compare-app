@@ -22,6 +22,50 @@ export default function Home() {
           <span className="font-semibold">Paillier Homomorphic Encryption</span>
           <span className="block text-sm text-gray-500">Explore homomorphic encryption with the Paillier cryptosystem</span>
         </Link>
+        <Link href="/mpc-tss" className="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:bg-blue-50 dark:hover:bg-blue-900 transition border border-gray-200 dark:border-gray-700">
+          <span className="font-semibold">MPC & TSS Playground</span>
+          <span className="block text-sm text-gray-500">Simulate multi-party signing with threshold security</span>
+        </Link>
+        <Link href="/mpc" className="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:bg-blue-50 dark:hover:bg-blue-900 transition border border-gray-200 dark:border-gray-700">
+          <span className="font-semibold">MPC</span>
+          <span className="block text-sm text-gray-500">Simulate multi-party signing </span>
+        </Link>
+        <Link href="/bls" className="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:bg-blue-50 dark:hover:bg-blue-900 transition border border-gray-200 dark:border-gray-700">
+          <span className="font-semibold">BLS Signatures Playground</span>
+          <span className="block text-sm text-gray-500">Explore short, aggregatable signatures used in Ethereum 2.0</span>
+        </Link>
+        <Link href="/frost" className="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:bg-blue-50 dark:hover:bg-blue-900 transition border border-gray-200 dark:border-gray-700">
+          <span className="font-semibold">FROST for EdDSA Playground</span>
+          <span className="block text-sm text-gray-500">Simulate modern threshold signing with EdDSA-compatible design</span>
+        </Link>
+        <Link href="/merkle-tree-playground" className="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:bg-blue-50 dark:hover:bg-blue-900 transition border border-gray-200 dark:border-gray-700">
+          <span className="font-semibold">Merkle Tree Playground</span>
+          <span className="block text-sm text-gray-500">Efficiently verifying large sets of data in blocks</span>
+        </Link>
+        <Link
+          href="/speedcomparison"
+          className="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:bg-blue-50 dark:hover:bg-blue-900 transition border border-gray-200 dark:border-gray-700"
+        >
+          <span className="font-semibold">Signature Speed Comparison</span>
+          <span className="block text-sm text-gray-500">Benchmark and compare ECDSA, EdDSA, and BLS performance</span>
+        </Link>
+        <Link
+          href="/history"
+          className="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:bg-blue-50 dark:hover:bg-blue-900 transition border border-gray-200 dark:border-gray-700"
+        >
+          <span className="font-semibold">History of Cryptography in Blockchain</span>
+          <span className="block text-sm text-gray-500">From early signatures to zero-knowledge and MPC</span>
+        </Link>
+        <Link
+          href="/comparison"
+          className="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:bg-blue-50 dark:hover:bg-blue-900 transition border border-gray-200 dark:border-gray-700"
+        >
+          <span className="font-semibold">When to Use What</span>
+          <span className="block text-sm text-gray-500">Compare cryptographic tools for common blockchain use cases</span>
+        </Link>
+
+
+
       </nav>
       <section className="mt-12 w-full max-w-2xl">
         <h2 className="text-2xl font-bold mb-4">Related Concepts</h2>
@@ -43,6 +87,10 @@ export default function Home() {
             <span className="block text-sm text-gray-500">How wallets and digital signatures work</span>
           </Link>
           <Link href="/zkps" className="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:bg-blue-50 dark:hover:bg-blue-900 transition border border-gray-200 dark:border-gray-700">
+            <span className="font-semibold">Zero-Knowledge Proofs</span>
+            <span className="block text-sm text-gray-500">Proving things without revealing secrets</span>
+          </Link>
+          <Link href="/zkproofs" className="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:bg-blue-50 dark:hover:bg-blue-900 transition border border-gray-200 dark:border-gray-700">
             <span className="font-semibold">Zero-Knowledge Proofs</span>
             <span className="block text-sm text-gray-500">Proving things without revealing secrets</span>
           </Link>
