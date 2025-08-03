@@ -65,7 +65,7 @@ export default function ComparisonPage() {
         <div className="max-w-5xl mx-auto py-12 px-4">
             <h1 className="text-3xl font-bold mb-6">Cryptographic Tools: When to Use What</h1>
             <p className="mb-8 text-gray-700 dark:text-gray-300">
-                This guide helps you pick the right cryptographic tool depending on what you're building — from blockchain apps and wallets to privacy protocols and rollups.
+                This guide helps you pick the right cryptographic tool depending on what you&apos;re building — from blockchain apps and wallets to privacy protocols and rollups.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

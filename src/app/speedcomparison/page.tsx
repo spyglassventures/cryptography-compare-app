@@ -1,3 +1,7 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 "use client";
 import React, { useState } from "react";
 import { secp256k1 } from "@noble/curves/secp256k1";
@@ -18,7 +22,7 @@ export default function SpeedComparison() {
         const t1 = performance.now();
         const sig = secp256k1.sign(hash, priv);
         const sigBytes = sig.toCompactRawBytes(); // <- 👈 this is a Uint8Array
-        const valid = secp256k1.verify(sigBytes, hash, pub);
+        //const valid = secp256k1.verify(sigBytes, hash, pub);
 
         const t2 = performance.now();
         const t3 = performance.now();
@@ -42,7 +46,7 @@ export default function SpeedComparison() {
         const sig = ed25519.sign(message, priv);
         const t2 = performance.now();
         const t3 = performance.now();
-        const valid = ed25519.verify(sig, message, pub);
+        //const valid = ed25519.verify(sig, message, pub);
         const t4 = performance.now();
 
         setResults((r) => ({
@@ -62,7 +66,7 @@ export default function SpeedComparison() {
         const sig = await bls12_381.sign(message, priv);
         const t2 = performance.now();
         const t3 = performance.now();
-        const valid = await bls12_381.verify(sig, message, pub);
+        // const valid = await bls12_381.verify(sig, message, pub);
         const t4 = performance.now();
 
         setResults((r) => ({

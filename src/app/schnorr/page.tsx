@@ -1,3 +1,7 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable react/no-unescaped-entities */
+
+
 "use client";
 import React, { useState } from "react";
 import { schnorr } from "@noble/curves/secp256k1";

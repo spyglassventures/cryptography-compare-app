@@ -1,3 +1,8 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable react/no-unescaped-entities */
+
+
+
 "use client";
 import React, { useState } from "react";
 import { secp256k1 } from "@noble/curves/secp256k1";

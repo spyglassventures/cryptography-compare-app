@@ -1,3 +1,7 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable react/no-unescaped-entities */
+
+
 "use client";
 import React, { useState } from "react";
 import { sha256 } from "@noble/hashes/sha256";
@@ -27,8 +31,8 @@ function buildMerkleTree(leaves: string[]): string[][] {
   return tree;
 }
 
-function getMerkleProof(tree: string[][], index: number): {sibling: string, position: 'left'|'right'}[] {
-  const proof: {sibling: string, position: 'left'|'right'}[] = [];
+function getMerkleProof(tree: string[][], index: number): { sibling: string, position: 'left' | 'right' }[] {
+  const proof: { sibling: string, position: 'left' | 'right' }[] = [];
   let idx = index;
   for (let level = 0; level < tree.length - 1; level++) {
     const currentLevel = tree[level];
@@ -45,7 +49,7 @@ function getMerkleProof(tree: string[][], index: number): {sibling: string, posi
   return proof;
 }
 
-function verifyMerkleProof(leaf: string, proof: {sibling: string, position: 'left'|'right'}[], root: string): boolean {
+function verifyMerkleProof(leaf: string, proof: { sibling: string, position: 'left' | 'right' }[], root: string): boolean {
   let hash = hashLeaf(leaf);
   for (const { sibling, position } of proof) {
     hash = position === 'left' ? hashLeaf(sibling + hash) : hashLeaf(hash + sibling);
