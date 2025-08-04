@@ -8,6 +8,13 @@ import MatrixBackground from "../components/MatrixBackground";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-12 bg-black text-white relative overflow-hidden">
+      {/* Logo oben rechts */}
+      {/* <img
+        src="/logo/1.png"
+        alt="Logo"
+        className="absolute top-4 left-4 w-22 h-22 z-20"
+      /> */}
+
       {/* Matrix-like Blockchain Background */}
       <MatrixBackground />
 
